@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивное меню с БЭМ</title>
+    <meta name="description" content="Продажа праздничных украшений и подарков">
+    <meta name="keywords" content="купить подарок, воздушные шары, новогодний подарок, новогодний декор, серпантин купить, подарок бабушке, подарок на 8 марта, подарок на 23 февраля, подарок на день рождение, подарочная упаковка, подарочная бумага ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__city">Астрахань</div>
+        <div class="header__logo"><img src="images/logo.png" alt=""></div>
+        <div class="header__user-options">
+            <a href="#" class="header__link header__link--login"><img src="images/user.png" alt=""></a>
+            <a href="#" class="header__link header__link--favorites"><img src="images/like.png" alt=""></a>
+            <a href="#" class="header__link header__link--cart"><img src="images/basket.png" alt=""></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#" class="navbar__link">О нас</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Каталог</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Блог</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Акции и скидки</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Доставка</a></li>
+        </ul>
+        <div class="navbar__burger" onclick="toggleMenu()"><img src="images/menu.png" alt=""></div>
+    </nav>
+    <main>
+
+        <section>
+        <div class="gallery">
+            <ul class="slides">
+                <li id="slide1"><img src="images/img-1.png" alt="" /></li>
+                <li id="slide2"><img src="images/img-2.png" alt="" /></li>
+                <li id="slide3"><img src="images/img-3.png" alt="" /></li>
+                <li id="slide4"><img src="images/img-4.jpg" alt="" /></li>
+                <li id="slide5"><img src="images/img-5.jpg" alt="" /></li>
+            </ul>
+            <ul class="thumbnails">
+                <li><a href="#slide1"><img src="images/0f29695df8ae4a04b91694cc073o--suveniry-i-podarki-podarki-na-8-marta-nabor-pryanikov-v-podar.jpg" /></a></li>
+                <li><a href="#slide2"><img src="images/23-fevralya.jpg" /></a></li>
+                <li><a href="#slide3"><img src="images/4551870000d8a61fb03ab18a47879b59.jpg" /></a></li>
+                <li><a href="#slide4"><img src="images/best_mama_1_2-1000x1000.jpg" /></a></li>
+                <li><a href="#slide5"><img src="images/v0yra8is0srn7ddxzq9i0cn6tex90wiq.jpg" /></a></li>
+            </ul>
+        </div>            
+        </section>
+        <section class="about">
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon"><img src="images/icon-1.png" alt=""></div>
+                    <div class="card__text">Работаем более 24 лет</div>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><img src="images/icon-2.png" alt=""></div>
+                    <div class="card__text">Магазины в крупных городах</div>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><img src="images/icon-3.png" alt=""></div>
+                    <div class="card__text">Оплата после получения и примерки</div>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><img src="images/icon-4.png" alt=""></div>
+                    <div class="card__text">Легкая процедура возврата в 14 дней</div>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><img src="images/icon-5.png" alt=""></div>
+                    <div class="card__text">Бесплатная доставка</div>
+                </div>
+            </div>
+        </section>
+        <section class="advertisement">
+            <div class="advertisement-img">
+                <a href="#"><img src="images/reklama.png" alt=""></a>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="brands-slider">
+                <div class="brands-slider__wrapper">
+                    <div class="brands-slider__item">
+                        <img src="images/brand-1.png" alt="Бренд 1" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-2.png" alt="Бренд 2" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-3.png" alt="Бренд 3" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-4.png" alt="Бренд 4" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-5.png" alt="Бренд 1" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-6.png" alt="Бренд 2" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-7.png" alt="Бренд 3" class="brands-slider__logo">
+                    </div>
+                    <div class="brands-slider__item">
+                        <img src="images/brand-8.png" alt="Бренд 4" class="brands-slider__logo">
+                    </div>
+                </div>
+                <button class="brands-slider__button brands-slider__button--prev">Назад</button>
+                <button class="brands-slider__button brands-slider__button--next">Вперед</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="images/logo.png" alt="Логотип" class="footer__image">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#about" class="footer__link">О нас</a></li>
+                    <li class="footer__item"><a href="#catalog" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#blog" class="footer__link">Блог</a></li>
+                    <li class="footer__item"><a href="#promotions" class="footer__link">Акции и скидки</a></li>
+                    <li class="footer__item"><a href="#delivery" class="footer__link">Доставка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="mane.js"></script>
+</body>
+</html>
